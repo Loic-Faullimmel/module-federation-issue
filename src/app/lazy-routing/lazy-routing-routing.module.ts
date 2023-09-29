@@ -17,6 +17,10 @@ const routes: Routes = [
         path: 'hey-patrick',
         component: HeyPatrickComponent
       },
+      {
+        path: '**',
+        redirectTo: '',
+      },
     ]
   },
   {
