@@ -28,6 +28,7 @@ export class AppModule {
     const ce = createCustomElement(AppComponent, {injector: this.injector});
     customElements.define('mf-lazy-module-routing-element', ce);
 
-    // this.router.navigate(['/']);
+    // this.router.navigate(['']);
+    this.router.initialNavigation();
   }
 }

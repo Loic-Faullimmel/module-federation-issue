@@ -19,7 +19,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {urlUpdateStrategy: 'eager'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
